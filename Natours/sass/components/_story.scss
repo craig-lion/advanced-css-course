@@ -1,13 +1,22 @@
 .story {
   width: 75%;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba($color-black, .6);
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.6);
   background-color: $color-white;
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
   font-size: $default-font-size;
   transform: skewY(-8deg);
+
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 6rem;
+    padding-left: 9rem;
+  }
+  @include respond(phone) {
+    transform: skew(0);
+  }
 
   & > * {
     transform: skewY(8deg);
@@ -23,16 +32,22 @@
     transform: translateX(-3rem) skewY(8deg);
     position: relative;
 
+    @include respond(phone) {
+      transform: translateX(-3rem) skewY(0deg);
+    }
   }
 
   &__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.5);
- 
   }
 
   &__text {
     transform: skewY(8deg);
+
+        @include respond(phone) {
+      transform: skewY(0deg);
+    }
   }
 
   &__caption {

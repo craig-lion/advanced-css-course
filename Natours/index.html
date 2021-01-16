@@ -19,6 +19,47 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><div class="span">01</div>
+              About</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><div class="span">02</div>
+              Your benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><div class="span">03</div>
+              Popular tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><div class="span">04</div>
+              Stories</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><div class="span">05</div>
+              Book now</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
       <div class="header__logo-box">
         <img src="./img/logo-white.png" alt="Logo" class="header__logo" />
@@ -28,14 +69,14 @@
           <span class="heading-primary--main">Outd0orz</span>
           <span class="heading-primary--sub">Cause Nature is Lit</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated"
+        <a href="#section-tours" class="btn btn--white btn--animated"
           >Get Out Yo House Fam!!!</a
         >
       </div>
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Exciting TourZ for Adventure Club People
@@ -65,25 +106,31 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                src="img/nat-1-large.jpg"
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 100w"
                 alt="Photo1"
                 class="composition_photo composition_photo--p1"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                src="img/nat-1-large.jpg"
               />
               <img
-                src="img/nat-2-large.jpg"
+                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 100w"
                 alt="Photo2"
                 class="composition_photo composition_photo--p2"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                src="img/nat-2-large.jpg"
               />
               <img
-                src="img/nat-3-large.jpg"
+                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 100w"
                 alt="Photo3"
                 class="composition_photo composition_photo--p3"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                src="img/nat-3-large.jpg"
               />
             </div>
           </div>
         </div>
       </section>
-      <section class="section-features">
+      <section class="section-features" id="section-features">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -137,7 +184,7 @@
           </div>
         </div>
       </section>
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Give the people what they want</h2>
           <div class="row">
@@ -164,7 +211,7 @@
                       <p class="card__price--only">Only</p>
                       <p class="card__price--value">$1985</p>
                     </div>
-                    <a href="#" class="btn btn--white">Cop Dis Yo!</a>
+                    <a href="#popup" class="btn btn--white">Cop Dis Yo!</a>
                   </div>
                 </div>
               </div>
@@ -194,7 +241,7 @@
                       <p class="card__price--only">Only</p>
                       <p class="card__price--value">$2008</p>
                     </div>
-                    <a href="#" class="btn btn--white">Cop Dis Yo!</a>
+                    <a href="#popup" class="btn btn--white">Cop Dis Yo!</a>
                   </div>
                 </div>
               </div>
@@ -229,7 +276,7 @@
             </div>
           </div>
           <div class="u-center-text u-margin-top-xBig">
-            <a href="#" class="btn btn--green">Sho me the Tourz</a>
+            <a href="#popup" class="btn btn--green">Sho me the Tourz</a>
           </div>
         </div>
       </section>
@@ -352,7 +399,10 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Full Logo" class="footer__logo" />
+          <picture class="footer__logo">
+              <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo">
+          </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
@@ -379,13 +429,40 @@
         <div class="col-1-of-2">
           <p class="footer__copyright">
             In here is where information goes pertaining to the copyright. This
-            website is free use from <a href="#" class="footer__link">Jonas Schmedtmann</a>. Its quite interesting
-            you have taken this much time to read the fake copyright &copy; on this
-            sample website.
+            website is free use from
+            <a href="#" class="footer__link">Jonas Schmedtmann</a>. Its quite
+            interesting you have taken this much time to read the fake copyright
+            &copy; on this sample website.
           </p>
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour Photo1" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour Photo2" class="popup__img" />
+        </div>
+        <div class="popup__right">
+            <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">Book Now Yo</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Dis Important &ndash; Doing stuff is dangerous...be careful
+          </h3>
+          <p class="popup__text">
+            The word ‘yoga’ is understood differently by many of us; for some
+            it’s purely a physical exercise, a way to get stronger, healthier
+            and more flexible; for others it’s meditating each day, and for
+            others still, it might mean chanting mantras or worshipping a deity.
+            If there’s one thing to be sure of though, it’s that yoga – meaning
+            ‘unity’, offers us a way of life that can be much more
+            transformational than a 60-minute yoga class once a week….
+          </p>
+          <a href="#" class="btn btn--green">Book Dis Trip</a>
+        </div>
+      </div>
+    </div>
 
     <!-- <section class="grid-test">
       <div class="row">

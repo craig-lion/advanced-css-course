@@ -1,17 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>nexter &mdash; your home, your freedom</title>
-    </head>
-    <body class="container">
-        
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>nexter &mdash; your home, your freedom</title>
+  </head>
+  <body class="container">
+    <div class="sidebar">
+        <button class="nav-btn"></button>
+    </div>
+    <header class="header">
+        <img src="img/logo.png" alt="Nexter Logo" class="header__logo">
+        <h3 class="heading-3">Your Own Home:</h3>
+        <h1 class="heading-1">The ultimate personal freedom</h1>
+        <button class="btn header__btn">View our properties</button>
+        <div class="header__seenon-text">Seen on</div>
+        <div class="header__seenon-logo">
+            <img src="img/logo-bbc.png" alt="BBC Logo">
+            <img src="img/logo-bi.png" alt="BI Logo">
+            <img src="img/logo-forbes.png" alt="Forbes Logo">
+            <img src="img/logo-techcrunch.png" alt="TechCrunch Logo">
+        </div>
+    </header>
+    <div class="realtors">
+        <h3 class="heading-3">Top 3 Realtors</h3>
+        <div class="realtors__list">
+            <img src="./img/realtor-1.jpeg" alt="Realtor 1" class="realtors__img">
+            <div class="realtors__details">
+                <h4 class="heading-4--light">Marshall Erikson</h4>
+                <p class="realtors__sold">245 houses sold</p>
+            </div>
+            <img src="./img/realtor-2.jpeg" alt="Realtor 2" class="realtors__img">
+            <div class="realtors__details">
+                <h4 class="heading-4--light">Lilly Aldrin</h4>
+                <p class="realtors__sold">343 houses sold</p>
+            </div>
+            <img src="./img/realtor-3.jpeg" alt="Realtor 3" class="realtors__img">
+            <div class="realtors__details">
+                <h4 class="heading-4--light">Barney Stinson</h4>
+                <p class="realtors__sold">529 houses sold</p>
+            </div>
+        </div>
+    </div>
+    <section class="features">
+      <div class="feature">
+        <svg class="feature__icon">
+          <use xlink:href="img/sprite.svg#icon-global"></use>
+        </svg>
+        <h4 class="heading-4 heading-4--dark">Simply the best</h4>
+        <p class="feature__text">
+          Here comes the sun do, do, do Here comes the sun And I say it's all
+          right
+        </p>
+      </div>
+      <div class="feature">
+        <svg class="feature__icon">
+          <use xlink:href="img/sprite.svg#icon-trophy"></use>
+        </svg>
+        <h4 class="heading-4 heading-4--dark">Better than all the rest</h4>
+        <p class="feature__text">
+          Little darling, it's been a long cold lonely winter Little darling, it
+          seems like years since it's been herer
+        </p>
+      </div>
+      <div class="feature">
+        <svg class="feature__icon">
+          <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+        </svg>
+        <h4 class="heading-4 heading-4--dark">Better than anyone</h4>
+        <p class="feature__text">
+          She's not a girl who misses much Do do do do do do, oh yeah She's
+          well-acquainted with the touch of the velvet hand Like a lizard on a
+          window pane
+        </p>
+      </div>
+      <div class="feature">
+        <svg class="feature__icon">
+          <use xlink:href="img/sprite.svg#icon-key"></use>
+        </svg>
+        <h4 class="heading-4 heading-4--dark">I've ever met</h4>
+        <p class="feature__text">
+          The man in the crowd with the multicolored mirrors On his hobnail
+          boots
+        </p>
+      </div>
+      <div class="feature">
+        <svg class="feature__icon">
+          <use xlink:href="img/sprite.svg#icon-presentation"></use>
+        </svg>
+        <h4 class="heading-4 heading-4--dark">I'm stuck on your heart</h4>
+        <p class="feature__text">
+          Lying with his eyes while his hands are busy Working overtime
+        </p>
+      </div>
+      <div class="feature">
+        <svg class="feature__icon">
+          <use xlink:href="img/sprite.svg#icon-lock"></use>
+        </svg>
+        <h4 class="heading-4 heading-4--dark">I hang on every word you say</h4>
+        <p class="feature__text">
+          A soap impression of his wife which he ate And donated to the National
+          Trust
+        </p>
+      </div>
+    </section>
+    <div class="story__picture">
+      <img
+        src="img/story-1.jpeg"
+        alt="Couple with new house"
+        class="story__img--1"
+      /><img src="img/story-2.jpeg" alt="New House" class="story__img--2" />
+    </div>
+    <div class="story__content">
+      <h3 class="heading-3 mb-sm">Happy Customers</h3>
+      <h2 class="heading-2 heading-2__dark mb-med">
+        &ldquo;The best day everrrr!&rdquo;
+      </h2>
+      <p class="story__text">
+        This is love: to fly toward a secret sky, to cause a hundred veils to
+        fall each moment. First to let go of life. Finally, to take a step
+        without feet.
+      </p>
+      <button class="btn">Find Yo House Yo!</button>
+    </div>
+    <section class="homes">
+      <div class="home">
+        <img src="img/house-1.jpeg" alt="House 1" class="home__img" />
+        <svg class="home__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="home__name">Beautiful Family home</h5>
+        <div class="home__location">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <p>USA</p>
+        </div>
+        <div class="home__rooms">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+          </svg>
+          <p>5 rooms</p>
+        </div>
+        <div class="home__area">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-expand"></use>
+          </svg>
+          <p>4,567 ft<sup>2</sup></p>
+        </div>
+        <div class="home__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-key"></use>
+          </svg>
+          <p>$1,200,000</p>
+        </div>
+        <button class="btn home__btn">Get @ Yo Realtor</button>
+      </div>
+      <div class="home">
+        <img src="img/house-2.jpeg" alt="House2" class="home__img" />
+        <svg class="home__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="home__name">Dis Look Gud Fam</h5>
+        <div class="home__location">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <p>USA</p>
+        </div>
+        <div class="home__rooms">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+          </svg>
+          <p>4 rooms</p>
+        </div>
+        <div class="home__area">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-expand"></use>
+          </svg>
+          <p>5,358 ft<sup>2</sup></p>
+        </div>
+        <div class="home__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-key"></use>
+          </svg>
+          <p>$3,100,000</p>
+        </div>
+        <button class="btn home__btn">Get @ Yo Realtor</button>
+      </div>
+      <div class="home">
+        <img src="img/house-3.jpeg" alt="House3" class="home__img" />
+        <svg class="home__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="home__name">Dis Cld B Yo House!</h5>
+        <div class="home__location">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <p>USA</p>
+        </div>
+        <div class="home__rooms">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+          </svg>
+          <p>8 rooms</p>
+        </div>
+        <div class="home__area">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-expand"></use>
+          </svg>
+          <p>9,245 ft<sup>2</sup></p>
+        </div>
+        <div class="home__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-key"></use>
+          </svg>
+          <p>$6,600,000</p>
+        </div>
+        <button class="btn home__btn">Get @ Yo Realtor</button>
+      </div>
+      <div class="home">
+        <img src="img/house-4.jpeg" alt="House4" class="home__img" />
+        <svg class="home__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="home__name">Cop Dis One Fam!</h5>
+        <div class="home__location">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <p>USA</p>
+        </div>
+        <div class="home__rooms">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+          </svg>
+          <p>7 rooms</p>
+        </div>
+        <div class="home__area">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-expand"></use>
+          </svg>
+          <p>6,892 ft<sup>2</sup></p>
+        </div>
+        <div class="home__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-key"></use>
+          </svg>
+          <p>$4,500,000</p>
+        </div>
+        <button class="btn home__btn">Get @ Yo Realtor</button>
+      </div>
+      <div class="home">
+        <img src="img/house-5.jpeg" alt="House5" class="home__img" />
+        <svg class="home__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="home__name">Treat Yoself</h5>
+        <div class="home__location">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <p>USA</p>
+        </div>
+        <div class="home__rooms">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+          </svg>
+          <p>5 rooms</p>
+        </div>
+        <div class="home__area">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-expand"></use>
+          </svg>
+          <p>6,245 ft<sup>2</sup></p>
+        </div>
+        <div class="home__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-key"></use>
+          </svg>
+          <p>$3,200,000</p>
+        </div>
+        <button class="btn home__btn">Get @ Yo Realtor</button>
+      </div>
+      <div class="home">
+        <img src="img/house-6.jpeg" alt="House6" class="home__img" />
+        <svg class="home__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="home__name">OSnap Dis My Crib</h5>
+        <div class="home__location">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <p>USA</p>
+        </div>
+        <div class="home__rooms">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+          </svg>
+          <p>6 rooms</p>
+        </div>
+        <div class="home__area">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-expand"></use>
+          </svg>
+          <p>7,000 ft<sup>2</sup></p>
+        </div>
+        <div class="home__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-key"></use>
+          </svg>
+          <p>$2,900,000</p>
+        </div>
+        <button class="btn home__btn">Get @ Yo Realtor</button>
+      </div>
+    </section>
+    <section class="gallery">
+      <figure class="gallery__item gallery__item--1">
+        <img src="img/gal-1.jpeg" alt="GalImg1" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+        <img src="img/gal-2.jpeg" alt="GalImg2" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--3">
+        <img src="img/gal-3.jpeg" alt="GalImg3" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--4">
+        <img src="img/gal-4.jpeg" alt="GalImg4" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--5">
+        <img src="img/gal-5.jpeg" alt="GalImg5" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--6">
+        <img src="img/gal-6.jpeg" alt="GalImg6" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--7">
+        <img src="img/gal-7.jpeg" alt="GalImg7" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--8">
+        <img src="img/gal-8.jpeg" alt="GalImg8" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--9">
+        <img src="img/gal-9.jpeg" alt="GalImg9" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--10">
+        <img src="img/gal-10.jpeg" alt="GalImg10" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--11">
+        <img src="img/gal-11.jpeg" alt="GalImg11" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--12">
+        <img src="img/gal-12.jpeg" alt="GalImg12" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--13">
+        <img src="img/gal-13.jpeg" alt="GalImg13" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--14">
+        <img src="img/gal-14.jpeg" alt="GalImg14" class="gallery__img" />
+      </figure>
+    </section>
+    <footer class="footer">
+      <ul class="nav">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Find Your Dream Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Request Proposal</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Download Home Planner</a>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Submit your property</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Come work with us</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        &copy; This is just a demonstration, it is not meant for being used for
+        commercial purposes. This is also a lot of time for you to be spending
+        reading this fake legal statement.
+      </p>
+    </footer>
+  </body>
 </html>
